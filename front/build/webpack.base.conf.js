@@ -24,7 +24,7 @@ module.exports = {
       '@': resolve('src'),
       '_V': resolve('src/' + process.argv[2] + '/views'),
       '_C': resolve('src/' + process.argv[2] + '/components'),
-      '_A': resolve('src/' + process.argv[2] + '/assets')
+      '_A': resolve('src/' + 'assets/' + process.argv[2])
     }
   },
   module: {

@@ -12,11 +12,9 @@ var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 
-console.log(config.build.index);
-
 var env = config.build.env
 
-var webpackConfig = merge(baseWebpackConfig, platConfig, {
+var webpackConfig = merge(platConfig, baseWebpackConfig, {
   module: {
     rules: utils.styleLoaders({
       sourceMap: config.build.productionSourceMap,

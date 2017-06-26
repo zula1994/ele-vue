@@ -14,7 +14,7 @@ Object.keys(platConfig.entry).forEach(function (name) {
   platConfig.entry[name] = ['./build/dev-client'].concat(platConfig.entry[name])
 })
 
-module.exports = merge(baseWebpackConfig, platConfig, {
+module.exports = merge(platConfig, baseWebpackConfig, {
   module: {
     rules: utils.styleLoaders({ sourceMap: config.dev.cssSourceMap })
   },
