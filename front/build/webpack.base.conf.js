@@ -25,6 +25,7 @@ module.exports = {
       '_V': resolve('src/' + process.argv[2] + '/views'),
       '_C': resolve('src/' + process.argv[2] + '/components'),
       '_A': resolve('src/assets/' + process.argv[2]),
+      '_M': resolve('src/mixins'),
       '_': resolve('src/assets')
     }
   },

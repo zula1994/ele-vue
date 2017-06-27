@@ -6,17 +6,29 @@
   margin: 0 auto;
 }
 .btn {
-  width: 100%;
   height: 100%;
   border: 0;
 }
 .btn-search {
+  width: 100%;
   font-size: 20px;
   color: #fff;
   background-color: #e62625;
 }
+.btn-located {
+  padding: 5px 15px;
+  color: #fff;
+  border-radius: 4px;
+  background-color: #ff6000;
+}
 .text-center {
   text-align: center;
+}
+.pull-right {
+  float: right;
+}
+.highlight {
+  color: #0089dc;
 }
 .mt-30 {
   margin-top: 30px;
