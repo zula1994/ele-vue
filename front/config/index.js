@@ -25,7 +25,7 @@ module.exports = {
   },
   dev: {
     env: require('./dev.env'),
-    port: 3000,
+    port: process.argv[2] === 'pc' ? 4018 : 4016,
     autoOpenBrowser: true,
     assetsSubDirectory: 'assets',
     assetsPublicPath: '/',

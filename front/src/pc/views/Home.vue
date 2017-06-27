@@ -5,22 +5,10 @@
         <div class="map-logo">
           <img :src="require('_A/images/map-logo-center.png')">
         </div>
-        <div class="search-bar">
-          <div class="search-area">
-            <div class="search-located">
-              <a href="javascript:;">{{ defCity }}</a>
-            </div>
-            <div class="search-input">
-              <input type="text" placeholder="请输入你的收货地址（写字楼，小区，街道或者学校）">
-            </div>
-          </div>
-          <div class="search-button">
-            <button type="button" class="btn btn-search">搜索</button>
-          </div>
-        </div>
+        <search-bar></search-bar>
       </div>
     </div>
-    <div class="footer">
+    <div class="download">
       <div class="container text-center">
         <div class="app-area">
           <div class="app-qc">
@@ -28,26 +16,34 @@
             <span>扫码下载APP</span>
           </div>
           <div class="app-cast">
-            <p>新用户首次下单</p>
+            <p class="mt-30">新用户首次下单</p>
             <h3>最高立减20元</h3>
             <p>立即下载APP, 享受更多优惠吧！</p>
           </div>
         </div>
       </div>
     </div>
+    <div class="footer-nav">
+      <div class="container text-center">
+        <router-link to="/open">我要开店</router-link>
+        <router-link to="/support/about">联系我们</router-link>
+        <router-link to="/support/agreement">服务条款和协议</router-link>
+        <router-link to="/jobs">加入我们</router-link>
+        <router-link to="/express">蜂鸟配送</router-link>
+      </div>
+    </div>
+    <copyright></copyright>
   </div>
 </template>
 
 <script>
+import SearchBar from '_C/SearchBar';
+import Copyright from '_C/Copyright';
+
 export default {
-  data() {
-    return {
-      defCity: '上海'
-    }
+  components: {
+    'search-bar': SearchBar,
+    'copyright': Copyright
   }
 }
 </script>
-
-<style lang="scss" scoped>
-
-</style>
